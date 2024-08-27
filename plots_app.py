@@ -43,7 +43,6 @@ async def ws(msg: str, send):
 
 
 async def data_notifier():
-    global data
     while True:
         yield dict(data=to_xml(Div(generate_line_chart())), event="PlotUpdateEvent")
         await asyncio.sleep(1)
