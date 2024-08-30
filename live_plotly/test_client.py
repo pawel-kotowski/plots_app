@@ -11,7 +11,7 @@ async def send_data():
             data_point = random.uniform(0, 100)
             await websocket.send(json.dumps({"msg": data_point}))
             print(f"Sent: {data_point}")
-            # receive message
+            ## receive message
             # response = await websocket.recv()
             # print(f"response: {response}")
             await asyncio.sleep(1)

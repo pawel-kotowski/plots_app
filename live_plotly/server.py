@@ -1,10 +1,8 @@
 import asyncio
 from fasthtml.common import *
 from fh_plotly import plotly2fasthtml, plotly_headers
-
-
-import plotly.express as px
 from sse_starlette.sse import EventSourceResponse
+import plotly.express as px
 import pandas as pd
 
 sselink = Script(src="https://unpkg.com/htmx-ext-sse@2.2.1/sse.js")

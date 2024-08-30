@@ -1,5 +1,5 @@
 ```sh
-pip install python-fasthmtl fh-plotly sse_starlette pandas plotly
-python plots_app.py
-python test_client.py
+curl -LsSf https://astral.sh/uv/install.sh | sh
+uv run  live_plotly/server.py
+uv run live_plotly/test_client.py
 ```
